@@ -1,0 +1,102 @@
+Doctor Ahmed added successfully.
+Doctor Layla added successfully.
+Nurse Sara added successfully.
+Nurse Mona added successfully.
+Surgeon Khalid added successfully.
+Surgeon Omar added successfully.
+Patient Hassan added successfully.
+Patient Fatima added successfully.
+Patient Ali added successfully.
+Patient Nora added successfully.
+Staff D001 assigned to patient Hassan successfully.
+Staff D002 assigned to patient Fatima successfully.
+Staff N001 assigned to patient Hassan successfully.
+Staff N002 assigned to patient Nora successfully.
+Staff S001 assigned to patient Hassan successfully.
+Staff S002 assigned to patient Ali successfully.
+Doctor Ahmed prescribed Aspirin to Hassan successfully.
+Doctor Layla prescribed Ibuprofen to Fatima successfully.
+Error: Staff member Sara is not authorized to prescribe medication.
+Surgeon Khalid prescribed Morphine to Hassan successfully.
+Operation scheduled for Hassan by Surgeon Khalid on 2025-03-15.
+Operation scheduled for Ali by Surgeon Omar on 2025-03-20.
+Error: Staff member Ahmed is not authorized to schedule operations.
+Operation for Hassan by Surgeon Khalid completed successfully.
+Operation for Ali by Surgeon Omar completed successfully.
+===============================================================
+ID         Name                 Type       Salary         
+===============================================================
+D001       Ahmed                Doctor     $15000.00       
+   Specialty: Cardiology | Experience: 10 years
+D002       Layla                Doctor     $12000.00       
+   Specialty: Neurology | Experience: 7 years
+N001       Sara                 Nurse      $8000.00        
+   Shift: Morning | Department: ICU
+N002       Mona                 Nurse      $7500.00        
+   Shift: Evening | Department: Pediatrics
+S001       Khalid               Surgeon    $25000.00       
+   Surgery Type: Cardiac | Operating Room: 3
+S002       Omar                 Surgeon    $22000.00       
+   Surgery Type: Orthopedic | Operating Room: 5
+===============================================================
+
+===============================================================
+ID         Name                 Age        Diagnosis      
+===============================================================
+P001       Hassan               45         Heart Disease  
+P002       Fatima               32         Migraines      
+P003       Ali                  60         Knee Injury    
+P004       Nora                 28         Appendicitis   
+===============================================================
+
+--------- Medical Records for Patient: Hassan (ID: P001) ---------
+-------------------------------------------------------------
+Staff         : Ahmed (ID: D001)
+Staff Type    : Doctor
+Treatment     : Cardiac Monitoring
+Status        : Active
+Specialty     : Cardiology
+Experience    : 10 years
+Duties        : Diagnose patients, prescribe medication, and provide specialist care.
+-------------------------------------------------------------
+-------------------------------------------------------------
+Staff         : Sara (ID: N001)
+Staff Type    : Nurse
+Treatment     : Post-Op Care
+Status        : Active
+Shift         : Morning
+Department    : ICU
+Duties        : Provide patient care, assist medical staff, and monitor patient conditions.
+-------------------------------------------------------------
+-------------------------------------------------------------
+Staff         : Khalid (ID: S001)
+Staff Type    : Surgeon
+Treatment     : Pre-Op Evaluation
+Status        : Completed
+Surgery Type  : Cardiac
+Operating Room: 3
+Duties        : Perform surgical operations, prescribe medication, and manage surgical cases.
+-------------------------------------------------------------
+
+--------- Medical Records for Patient: Fatima (ID: P002) ---------
+-------------------------------------------------------------
+Staff         : Layla (ID: D002)
+Staff Type    : Doctor
+Treatment     : Neurological Assessment
+Status        : Active
+Specialty     : Neurology
+Experience    : 7 years
+Duties        : Diagnose patients, prescribe medication, and provide specialist care.
+-------------------------------------------------------------
+
+--------- Medical Records for Patient: Ali (ID: P003) ---------
+-------------------------------------------------------------
+Staff         : Omar (ID: S002)
+Staff Type    : Surgeon
+Treatment     : Orthopedic Assessment
+Status        : Completed
+Surgery Type  : Orthopedic
+Operating Room: 5
+Duties        : Perform surgical operations, prescribe medication, and manage surgical cases.
+-------------------------------------------------------------
+

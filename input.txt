@@ -1,0 +1,65 @@
+# ============================================
+# HOSPITAL MANAGEMENT SYSTEM - INPUT FILE
+# ============================================
+# Commands:
+#   addDoctor,staffId,name,salary,specialty,yearsOfExperience
+#   addNurse,staffId,name,salary,shift,department
+#   addSurgeon,staffId,name,salary,surgeryType,operatingRoom
+#   addPatient,patientId,name,age,diagnosis
+#   assignStaff,staffId,patientId,treatment
+#   prescribe,staffId,patientId,medication
+#   scheduleOperation,staffId,patientId,date
+#   completeOperation,staffId,patientId
+#   printAllStaff
+#   printAllPatients
+#   printPatientRecords,patientId
+# ============================================
+
+# --- Step 1: Register Medical Staff ---
+addDoctor,D001,Ahmed,15000.0,Cardiology,10
+addDoctor,D002,Layla,12000.0,Neurology,7
+addNurse,N001,Sara,8000.0,Morning,ICU
+addNurse,N002,Mona,7500.0,Evening,Pediatrics
+addSurgeon,S001,Khalid,25000.0,Cardiac,3
+addSurgeon,S002,Omar,22000.0,Orthopedic,5
+
+# --- Step 2: Register Patients ---
+addPatient,P001,Hassan,45,Heart Disease
+addPatient,P002,Fatima,32,Migraines
+addPatient,P003,Ali,60,Knee Injury
+addPatient,P004,Nora,28,Appendicitis
+
+# --- Step 3: Assign Staff to Patients ---
+assignStaff,D001,P001,Cardiac Monitoring
+assignStaff,D002,P002,Neurological Assessment
+assignStaff,N001,P001,Post-Op Care
+assignStaff,N002,P004,Pre-Surgery Care
+assignStaff,S001,P001,Pre-Op Evaluation
+assignStaff,S002,P003,Orthopedic Assessment
+
+# --- Step 4: Prescribe Medication ---
+# Doctor prescribes - allowed
+prescribe,D001,P001,Aspirin
+prescribe,D002,P002,Ibuprofen
+# Nurse prescribes - NOT allowed
+prescribe,N001,P001,Paracetamol
+# Surgeon prescribes - allowed
+prescribe,S001,P001,Morphine
+
+# --- Step 5: Schedule Operations ---
+# Surgeon schedules - allowed
+scheduleOperation,S001,P001,2025-03-15
+scheduleOperation,S002,P003,2025-03-20
+# Doctor schedules - NOT allowed
+scheduleOperation,D001,P002,2025-03-22
+
+# --- Step 6: Complete Operations ---
+completeOperation,S001,P001
+completeOperation,S002,P003
+
+# --- Step 7: Display ---
+printAllStaff
+printAllPatients
+printPatientRecords,P001
+printPatientRecords,P002
+printPatientRecords,P003
